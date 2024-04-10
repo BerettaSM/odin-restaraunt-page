@@ -1,10 +1,13 @@
 {
-  "name": "odin-restaraunt-page",
-  "version": "1.0.0",
-  "description": "Some of the projects for [The Odin Project](https://www.theodinproject.com/), in the javascript syllabus.",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "odin-restaraunt-page",
+    "version": "1.0.0",
+    "description": "Some of the projects for [The Odin Project](https://www.theodinproject.com/), in the javascript syllabus.",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "3.2.5"
+    }
 }
