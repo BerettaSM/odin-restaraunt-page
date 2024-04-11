@@ -24,10 +24,16 @@ module.exports = {
                         options: {
                             importLoaders: 1,
                             modules: true,
-                            sourceMap: true
+                            sourceMap: true,
                         },
                     },
                 ],
+                include: /\.module\.css$/,
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+                exclude: /\.module\.css$/,
             },
         ],
     },
