@@ -1,5 +1,12 @@
 export const INFO = {
     name: 'Saffron Grove Bistro',
+    images: [
+        'restaurant-1.jpg',
+        'restaurant-2.jpg',
+        'restaurant-3.jpg',
+        'restaurant-4.jpg',
+        'restaurant-5.jpg',
+    ],
     descriptions: {
         'About Us':
             'Welcome to Saffron Grove Bistro, where culinary excellence meets refined dining experience. Nestled in the heart of Cityville, our restaurant offers a fusion of international flavors crafted with locally sourced ingredients. From our carefully curated menu to our elegant ambiance, every aspect of Saffron Grove Bistro is designed to delight your senses and elevate your dining experience.',
@@ -44,76 +51,91 @@ export const DISHES = [
         title: 'Truffle Risotto Delight',
         description:
             'Creamy Arborio rice cooked to perfection with aromatic truffle oil, finished with Parmesan cheese and a hint of freshly cracked black pepper.',
+        image: 'truffle-risotto-delight.jpg',
     },
     {
         title: 'Seared Scallops with Citrus Glaze',
         description:
             'Tender scallops, delicately seared and served with a zesty citrus glaze, garnished with microgreens for a burst of freshness.',
+        image: 'seared-scallops-with-citrus-glaze.jpg',
     },
     {
         title: 'Grilled Mediterranean Lamb Chops',
         description:
             'Succulent lamb chops marinated in Mediterranean spices, grilled to juicy perfection, and served with a side of roasted vegetables and tzatziki sauce.',
+        image: 'grilled-mediterranean-lamb-chops.jpg',
     },
     {
         title: 'Wild Mushroom Tartlet',
         description:
             'Flaky puff pastry filled with a medley of wild mushrooms sautéed in garlic and thyme, topped with creamy goat cheese and a balsamic reduction drizzle.',
+        image: 'wild-mushroom-tartlet.jpg',
     },
     {
         title: 'Citrus-Infused Beet Salad',
         description:
             'Vibrant roasted beets tossed with arugula, tangy goat cheese, and toasted walnuts, dressed in a citrus vinaigrette for a refreshing burst of flavor.',
+        image: 'citrus-infused-beet-salad.jpg',
     },
     {
         title: 'Pan-Seared Duck Breast with Cherry Port Sauce',
         description:
             'Tender duck breast, pan-seared to crispy perfection and served with a rich cherry port sauce, accompanied by creamy mashed potatoes and sautéed green beans.',
+        image: 'pan-seared-duck-breast-with-cherry-port-sauce.jpg',
     },
     {
         title: 'Grilled Vegetable Platter',
         description:
             'A colorful array of seasonal vegetables, grilled to perfection and served with a drizzle of balsamic glaze, perfect for vegetarians and veggie lovers alike.',
+        image: 'grilled-vegetable-platter.jpg',
     },
     {
         title: 'Lobster Ravioli in Champagne Cream Sauce',
         description:
             'Homemade ravioli stuffed with succulent lobster meat, served in a luxurious champagne cream sauce, garnished with fresh chives for a touch of elegance.',
+        image: 'lobster-ravioli-in-champagne-cream-sauce.jpg',
     },
     {
         title: 'Filet Mignon with Red Wine Reduction',
         description:
             'Tender filet mignon, grilled to your liking and served with a velvety red wine reduction, accompanied by garlic mashed potatoes and buttery asparagus spears.',
+        image: 'filet-mignon-with-red-wine-reduction.jpg',
     },
     {
         title: 'Seafood Paella',
         description:
             'A Spanish-inspired delight featuring a medley of seafood, including shrimp, mussels, and clams, cooked with saffron-infused rice and aromatic spices.',
+        image: 'seafood-paella.jpg',
     },
     {
         title: 'Caprese Bruschetta',
         description:
             'Crispy baguette slices topped with ripe tomatoes, fresh mozzarella, and basil chiffonade, finished with a drizzle of balsamic glaze for a burst of Mediterranean flavors.',
+        image: 'caprese-bruschetta.jpg',
     },
     {
         title: 'Vegetable Ratatouille',
         description:
             'A hearty and comforting dish featuring a melange of seasonal vegetables, slow-cooked in a rich tomato sauce with fragrant herbs and garlic.',
+        image: 'vegetable-ratatouille.jpg',
     },
     {
         title: 'Miso Glazed Chilean Sea Bass',
         description:
             'Tender Chilean sea bass, marinated in a savory miso glaze and oven-roasted to perfection, served atop a bed of sautéed baby bok choy.',
+        image: 'miso-glazed-chilean-sea-bass.jpg',
     },
     {
         title: 'Butternut Squash Ravioli with Sage Brown Butter',
         description:
             'Pillowy ravioli filled with creamy butternut squash puree, tossed in a nutty sage brown butter sauce and sprinkled with toasted pine nuts.',
+        image: 'butternut-squash-ravioli-with-sage-brown-butter.jpg',
     },
     {
         title: 'Chocolate Lava Cake',
         description:
             'Indulge your sweet tooth with this decadent chocolate lava cake, featuring a molten chocolate center that oozes out with every forkful, served with a scoop of vanilla bean ice cream.',
+        image: 'chocolate-lava-cake.jpg',
     },
 ];
 
