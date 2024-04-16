@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+:root {
+    --color-primary: #6c112e;
+    --color-secondary: #d4af37;
+    --color-tertiary: #78866b;
+
+    /* --COLOR_THEME_4: #333333;
+    --COLOR_THEME_2: #F5F5F5; */
+
+    --color-gray-100: hsl(225deg, 25%, 95%);
+    --color-gray-200: hsl(225deg, 16%, 90%);
+    --color-gray-300: hsl(225deg, 8%, 80%);
+    --color-gray-400: hsl(225deg, 8%, 70%);
+    --color-gray-500: hsl(225deg, 7%, 60%);
+    --color-gray-600: hsl(225deg, 15%, 50%);
+    --color-gray-700: hsl(225deg, 12%, 40%);
+    --color-gray-900: hsl(225deg, 25%, 20%);
+    --color-gray-1000: hsl(225deg, 15%, 15%);
+}
+
+body {
+    background-color: rgb(59, 59, 59);
+}
