@@ -48,6 +48,16 @@ h6 {
     overflow-wrap: break-word;
 }
 
+/* STYLES */
+
+@font-face {
+    font-family: 'Mid Mid Sun Sun';
+    src: url('../assets/fonts/MidMidSunSun.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --color-primary: #6c112e;
     --color-secondary: #d4af37;
@@ -61,8 +71,31 @@ h6 {
     --color-gray-700: hsl(225deg, 12%, 40%);
     --color-gray-900: hsl(225deg, 25%, 20%);
     --color-gray-1000: hsl(225deg, 15%, 15%);
+
+    --font-main: 'Mid Mid Sun Sun', sans-serif;
+    --font-detail: 'Imperial Script', cursive;
 }
 
 body {
     background-color: var(--color-gray-700);
+}
+
+.app {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-main);
+
+    & header nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.max-width {
+    max-width: 1200px;
+    margin: auto;
+    padding-inline: 16px;
 }
