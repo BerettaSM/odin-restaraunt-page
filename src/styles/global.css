@@ -1,13 +1,57 @@
 @charset "utf-8";
 
+/* CSS Resets */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
 :root {
     --color-primary: #6c112e;
     --color-secondary: #d4af37;
     --color-tertiary: #78866b;
-
-    /* --COLOR_THEME_4: #333333;
-    --COLOR_THEME_2: #F5F5F5; */
-
     --color-gray-100: hsl(225deg, 25%, 95%);
     --color-gray-200: hsl(225deg, 16%, 90%);
     --color-gray-300: hsl(225deg, 8%, 80%);
@@ -20,5 +64,5 @@
 }
 
 body {
-    background-color: rgb(59, 59, 59);
+    background-color: var(--color-gray-700);
 }
