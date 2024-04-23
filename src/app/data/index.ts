@@ -1,11 +1,26 @@
 export const INFO = {
     name: 'Saffron Grove Bistro',
     images: [
-        'restaurant-1.jpg',
-        'restaurant-2.jpg',
-        'restaurant-3.jpg',
-        'restaurant-4.jpg',
-        'restaurant-5.jpg',
+        {
+            src: 'restaurant-1.jpg',
+            alt: 'Interior shot of the restaurant portraying fancy tables and chairs.',
+        },
+        {
+            src: 'restaurant-2.jpg',
+            alt: 'Chefs meticulously setting up dishes.',
+        },
+        {
+            src: 'restaurant-3.jpg',
+            alt: 'Close up shot of a fancy dish.',
+        },
+        {
+            src: 'restaurant-4.jpg',
+            alt: 'Server preparing tables.',
+        },
+        {
+            src: 'restaurant-5.jpg',
+            alt: 'Exterior shot of the restauraunt.',
+        },
     ],
     descriptions: {
         'About Us':
