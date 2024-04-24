@@ -78,6 +78,12 @@ h6 {
 
 body {
     color: var(--color-gray-100);
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
     background:
         linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.75)),
         url('../assets/images/restaurant-1.jpg') no-repeat center / cover;
@@ -88,7 +94,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100dvh;
     width: 100%;
     padding-block: 16px;
     font-family: var(--font-main);
@@ -105,8 +111,6 @@ body {
     align-items: flex-end;
     border-block-end: 1px solid var(--color-gray-100);
     padding-block-end: 16px;
-
-    height: 133px;
 
     & nav {
         margin-inline-start: auto;
@@ -129,7 +133,7 @@ body {
 }
 
 .content {
-    padding-block: 16px;
+    padding-block: 32px;
     flex: 1;
 
     h2 {
@@ -138,11 +142,47 @@ body {
     }
 
     p {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
+    }
+}
+
+.info-section {
+    display: flex;
+    gap: 32px;
+
+    .details {
+        p {
+            text-align: justify;
+        }
+
+        h2 {
+            margin-block-end: 16px;
+        }
+    }
+
+    .image {
+        border-radius: 12px;
+        overflow: hidden;
+        max-width: 380px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &:nth-of-type(2n) {
+        flex-direction: row-reverse;
+    }
+
+    &:not(:last-of-type) {
+        margin-block-end: 32px;
     }
 }
 
 .footer {
+    margin-block-start: auto;
     & > h3,
     & > p {
         text-align: center;
@@ -182,7 +222,7 @@ body {
 .max-width {
     max-width: 1200px;
     margin: auto;
-    padding-inline: 16px;
+    padding-inline: 32px;
 }
 
 button {
