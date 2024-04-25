@@ -1,41 +1,7 @@
+import { SectionData } from './types';
+
 export const INFO = {
     name: 'Saffron Grove Bistro',
-    images: [
-        {
-            src: 'restaurant-1.jpg',
-            alt: 'Interior shot of the restaurant portraying fancy tables and chairs.',
-        },
-        {
-            src: 'restaurant-2.jpg',
-            alt: 'Chefs meticulously setting up dishes.',
-        },
-        {
-            src: 'restaurant-3.jpg',
-            alt: 'Close up shot of a fancy dish.',
-        },
-        {
-            src: 'restaurant-4.jpg',
-            alt: 'Server preparing tables.',
-        },
-        {
-            src: 'restaurant-5.jpg',
-            alt: 'Exterior shot of the restauraunt.',
-        },
-    ],
-    descriptions: {
-        'About Us':
-            'Welcome to Saffron Grove Bistro, where culinary excellence meets refined dining experience. Nestled in the heart of Cityville, our restaurant offers a fusion of international flavors crafted with locally sourced ingredients. From our carefully curated menu to our elegant ambiance, every aspect of Saffron Grove Bistro is designed to delight your senses and elevate your dining experience.',
-        'Our Menu':
-            "Explore our exquisite menu, meticulously prepared by our talented chefs to tantalize your taste buds. From delectable appetizers to mouthwatering entrees and decadent desserts, each dish at Saffron Grove Bistro is a masterpiece of flavor and presentation. Whether you're craving classic favorites or adventurous creations, there's something for every palate on our menu.",
-        'Special Events':
-            "Join us for special events and culinary experiences at Saffron Grove Bistro. From wine tastings and chef's specials to seasonal celebrations, we invite you to indulge in unforgettable moments of gastronomic delight with us.",
-        Reservations:
-            "Make a reservation at Saffron Grove Bistro to secure your table for an unforgettable dining experience. Whether you're planning a romantic dinner for two, a family celebration, or a corporate gathering, our team is here to ensure every detail is perfect.",
-        'Contact Us':
-            "Have questions or want to learn more about Saffron Grove Bistro? Contact our friendly staff, and we'll be happy to assist you. You can reach us by phone, email, or visit us in person at our convenient location in 123 Main Street.",
-        'Follow Us':
-            'Stay updated on the latest news, events, and promotions at Saffron Grove Bistro by following us on social media. Connect with us on Facebook, Instagram, and Twitter for mouthwatering photos, behind-the-scenes glimpses, and exclusive offers.',
-    },
     address: {
         street: '123 Main Street',
         city: 'Cityville',
@@ -52,12 +18,57 @@ export const INFO = {
         reservations: 'reservations@saffrongrovebistro.com',
     },
     openingHours: {
-        Tuesdays: '18:00 - 22:00',
-        Wednesdays: '18:00 - 22:00',
-        Thursdays: '18:00 - 22:00',
-        Fridays: '18:00 - 23:00',
-        Saturdays: '17:00 - 23:00',
-        Sundays: '17:00 - 22:00',
+        tuesdays: '18:00 - 22:00',
+        wednesdays: '18:00 - 22:00',
+        thursdays: '18:00 - 22:00',
+        fridays: '18:00 - 23:00',
+        saturdays: '17:00 - 23:00',
+        sundays: '17:00 - 22:00',
+    },
+};
+
+export const SECTIONS: SectionData = {
+    welcome: {
+        title: 'Welcome',
+        description:
+            'Welcome to Saffron Grove Bistro, where culinary excellence meets refined dining experience. Nestled in the heart of Cityville, our restaurant offers a fusion of international flavors crafted with locally sourced ingredients. From our carefully curated menu to our elegant ambiance, every aspect of Saffron Grove Bistro is designed to delight your senses and elevate your dining experience.',
+        image: {
+            src: 'assets/images/restaurant-2.jpg',
+            alt: 'Chefs meticulously setting up dishes.',
+        },
+    },
+    menu: {
+        title: 'Our Menu',
+        description:
+            "Explore our exquisite menu, meticulously prepared by our talented chefs to tantalize your taste buds. From delectable appetizers to mouthwatering entrees and decadent desserts, each dish at Saffron Grove Bistro is a masterpiece of flavor and presentation. Whether you're craving classic favorites or adventurous creations, there's something for every palate on our menu.",
+        image: {
+            src: 'assets/images/restaurant-3.jpg',
+            alt: 'Close up shot of a fancy dish.',
+        },
+    },
+    specialEvents: {
+        title: 'Special Events',
+        description:
+            "Join us for special events and culinary experiences at Saffron Grove Bistro. From wine tastings and chef's specials to seasonal celebrations, we invite you to indulge in unforgettable moments of gastronomic delight with us.",
+        image: {
+            src: 'assets/images/restaurant-4.jpg',
+            alt: 'Server preparing tables.',
+        },
+    },
+    reservations: {
+        title: 'Reservations',
+        description:
+            "Make a reservation at Saffron Grove Bistro to secure your table for an unforgettable dining experience. Whether you're planning a romantic dinner for two, a family celebration, or a corporate gathering, our team is here to ensure every detail is perfect.",
+    },
+    contactUs: {
+        title: 'Contact Us',
+        description:
+            "Have questions or want to learn more about Saffron Grove Bistro? Contact our friendly staff, and we'll be happy to assist you. You can reach us by phone, email, or visit us in person at our convenient location in 123 Main Street.",
+    },
+    followUs: {
+        title: 'Follow Us',
+        description:
+            'Stay updated on the latest news, events, and promotions at Saffron Grove Bistro by following us on social media. Connect with us on Facebook, Instagram, and Twitter for mouthwatering photos, behind-the-scenes glimpses, and exclusive offers.',
     },
 };
 
