@@ -12,6 +12,6 @@ export function toStyledTitle(title: HTMLHeadingElement) {
             span.textContent = word;
             return span;
         })
-        .forEach((span) => clone.appendChild(span));
+        .forEach((span) => clone.append(span, ' '));
     return clone;
 }
