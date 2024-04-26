@@ -1,4 +1,5 @@
-import { SectionData } from './types';
+import { getRandomNumber } from '../../utils';
+import { DishData, DishDataWithPrice, SectionData } from './types';
 
 export const INFO = {
     name: 'Saffron Grove Bistro',
@@ -72,96 +73,96 @@ export const SECTIONS: SectionData = {
     },
 };
 
-export const DISHES = [
+export const DISHES: DishData[] = [
     {
         title: 'Truffle Risotto Delight',
         description:
             'Creamy Arborio rice cooked to perfection with aromatic truffle oil, finished with Parmesan cheese and a hint of freshly cracked black pepper.',
-        image: 'truffle-risotto-delight.jpg',
+        image: 'assets/images/truffle-risotto-delight.jpg',
     },
     {
         title: 'Seared Scallops with Citrus Glaze',
         description:
             'Tender scallops, delicately seared and served with a zesty citrus glaze, garnished with microgreens for a burst of freshness.',
-        image: 'seared-scallops-with-citrus-glaze.jpg',
+        image: 'assets/images/seared-scallops-with-citrus-glaze.jpg',
     },
     {
         title: 'Grilled Mediterranean Lamb Chops',
         description:
             'Succulent lamb chops marinated in Mediterranean spices, grilled to juicy perfection, and served with a side of roasted vegetables and tzatziki sauce.',
-        image: 'grilled-mediterranean-lamb-chops.jpg',
+        image: 'assets/images/grilled-mediterranean-lamb-chops.jpg',
     },
     {
         title: 'Wild Mushroom Tartlet',
         description:
             'Flaky puff pastry filled with a medley of wild mushrooms sautéed in garlic and thyme, topped with creamy goat cheese and a balsamic reduction drizzle.',
-        image: 'wild-mushroom-tartlet.jpg',
+        image: 'assets/images/wild-mushroom-tartlet.jpg',
     },
     {
         title: 'Citrus-Infused Beet Salad',
         description:
             'Vibrant roasted beets tossed with arugula, tangy goat cheese, and toasted walnuts, dressed in a citrus vinaigrette for a refreshing burst of flavor.',
-        image: 'citrus-infused-beet-salad.jpg',
+        image: 'assets/images/citrus-infused-beet-salad.jpg',
     },
     {
         title: 'Pan-Seared Duck Breast with Cherry Port Sauce',
         description:
             'Tender duck breast, pan-seared to crispy perfection and served with a rich cherry port sauce, accompanied by creamy mashed potatoes and sautéed green beans.',
-        image: 'pan-seared-duck-breast-with-cherry-port-sauce.jpg',
+        image: 'assets/images/pan-seared-duck-breast-with-cherry-port-sauce.jpg',
     },
     {
         title: 'Grilled Vegetable Platter',
         description:
             'A colorful array of seasonal vegetables, grilled to perfection and served with a drizzle of balsamic glaze, perfect for vegetarians and veggie lovers alike.',
-        image: 'grilled-vegetable-platter.jpg',
+        image: 'assets/images/grilled-vegetable-platter.jpg',
     },
     {
         title: 'Lobster Ravioli in Champagne Cream Sauce',
         description:
             'Homemade ravioli stuffed with succulent lobster meat, served in a luxurious champagne cream sauce, garnished with fresh chives for a touch of elegance.',
-        image: 'lobster-ravioli-in-champagne-cream-sauce.jpg',
+        image: 'assets/images/lobster-ravioli-in-champagne-cream-sauce.jpg',
     },
     {
         title: 'Filet Mignon with Red Wine Reduction',
         description:
             'Tender filet mignon, grilled to your liking and served with a velvety red wine reduction, accompanied by garlic mashed potatoes and buttery asparagus spears.',
-        image: 'filet-mignon-with-red-wine-reduction.jpg',
+        image: 'assets/images/filet-mignon-with-red-wine-reduction.jpg',
     },
     {
         title: 'Seafood Paella',
         description:
             'A Spanish-inspired delight featuring a medley of seafood, including shrimp, mussels, and clams, cooked with saffron-infused rice and aromatic spices.',
-        image: 'seafood-paella.jpg',
+        image: 'assets/images/seafood-paella.jpg',
     },
     {
         title: 'Caprese Bruschetta',
         description:
             'Crispy baguette slices topped with ripe tomatoes, fresh mozzarella, and basil chiffonade, finished with a drizzle of balsamic glaze for a burst of Mediterranean flavors.',
-        image: 'caprese-bruschetta.jpg',
+        image: 'assets/images/caprese-bruschetta.jpg',
     },
     {
         title: 'Vegetable Ratatouille',
         description:
             'A hearty and comforting dish featuring a melange of seasonal vegetables, slow-cooked in a rich tomato sauce with fragrant herbs and garlic.',
-        image: 'vegetable-ratatouille.jpg',
+        image: 'assets/images/vegetable-ratatouille.jpg',
     },
     {
         title: 'Miso Glazed Chilean Sea Bass',
         description:
             'Tender Chilean sea bass, marinated in a savory miso glaze and oven-roasted to perfection, served atop a bed of sautéed baby bok choy.',
-        image: 'miso-glazed-chilean-sea-bass.jpg',
+        image: 'assets/images/miso-glazed-chilean-sea-bass.jpg',
     },
     {
         title: 'Butternut Squash Ravioli with Sage Brown Butter',
         description:
             'Pillowy ravioli filled with creamy butternut squash puree, tossed in a nutty sage brown butter sauce and sprinkled with toasted pine nuts.',
-        image: 'butternut-squash-ravioli-with-sage-brown-butter.jpg',
+        image: 'assets/images/butternut-squash-ravioli-with-sage-brown-butter.jpg',
     },
     {
         title: 'Chocolate Lava Cake',
         description:
             'Indulge your sweet tooth with this decadent chocolate lava cake, featuring a molten chocolate center that oozes out with every forkful, served with a scoop of vanilla bean ice cream.',
-        image: 'chocolate-lava-cake.jpg',
+        image: 'assets/images/chocolate-lava-cake.jpg',
     },
 ];
 
@@ -239,3 +240,34 @@ export const TESTIMONIALS = [
             "The hospitality at Saffron Grove Bistro is truly unmatched. From the moment you arrive until the moment you leave, you're treated like royalty. The staff's warmth and professionalism elevate the dining experience to new heights. Bravo!",
     },
 ];
+
+export function getDishes(): DishDataWithPrice[] {
+    return DISHES.map((dish) => ({
+        ...dish,
+        price: getRandomNumber(3500, 12000) / 100,
+    }));
+}
+
+type PaginationOptions = {
+    page: number;
+    dishesPerPage: number;
+};
+
+export function getDishesWithPagination({
+    page,
+    dishesPerPage,
+}: PaginationOptions) {
+    const dishes = getDishes();
+    const total = dishes.length;
+    const lastPage = Math.max(Math.ceil(total / dishesPerPage), 1);
+
+    if (page < 1 || page > lastPage) {
+        throw new Error('Invalid page number.');
+    }
+
+    const start = (page - 1) * dishesPerPage;
+    const end = start + dishesPerPage;
+    const pageDishes = dishes.slice(start, end);
+
+    return { page, lastPage, dishesPerPage, pageDishes };
+}
