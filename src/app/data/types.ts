@@ -10,3 +10,13 @@ export interface InfoSectionData {
 export interface SectionData {
     [k: string]: InfoSectionData;
 }
+
+export interface DishData {
+    title: string;
+    description: string;
+    image: string;
+}
+
+export interface DishDataWithPrice extends DishData {
+    price: number;
+}
