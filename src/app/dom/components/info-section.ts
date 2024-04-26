@@ -12,7 +12,7 @@ export class InfoSection extends Component {
     }
 
     create(): HTMLElement {
-        const self = document.createElement('div');
+        const self = document.createElement('section');
         const details = document.createElement('div');
         const description = document.createElement('p');
 
