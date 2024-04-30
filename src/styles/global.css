@@ -146,6 +146,12 @@ body {
     }
 }
 
+.menu-section {
+    display: flex;
+    flex-flow: wrap column;
+    gap: 16px;
+}
+
 .footer {
     margin-block-start: auto;
     & > h3,
@@ -190,34 +196,21 @@ body {
     padding-inline: 32px;
 }
 
+.multi-line-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.multi-line-ellipsis.single-line {
+    -webkit-line-clamp: 1;
+}
+
 button {
-    color: inherit;
-    cursor: pointer;
     padding: 6px 24px;
-    background-color: transparent;
-    border: 1px solid var(--color-gray-100);
     border-radius: 8px;
     font-weight: bold;
-
-    transition:
-        color 450ms ease-out,
-        background-color 450ms ease-out;
-
-    &:not(:disabled):hover {
-        background-color: rgb(255 255 255 / 0.1);
-        transition:
-            color 150ms ease-out,
-            background-color 150ms ease-out;
-    }
-
-    &:disabled {
-        cursor: not-allowed;
-    }
-
-    &.active {
-        background-color: var(--color-gray-200);
-        color: var(--color-gray-900);
-    }
 }
 
 a {
@@ -226,5 +219,33 @@ a {
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+.clickable {
+    color: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--color-gray-100);
+    transition:
+        color 450ms ease-out,
+        background-color 450ms ease-out;
+
+    &:disabled,
+    &.disabled {
+        cursor: not-allowed;
+    }
+
+    &.active {
+        background-color: var(--color-gray-200) !important;
+        color: var(--color-gray-900) !important;
+    }
+
+    &:hover,
+    &:hover {
+        background-color: rgb(255 255 255 / 0.1);
+        transition:
+            color 150ms ease-out,
+            background-color 150ms ease-out;
     }
 }
