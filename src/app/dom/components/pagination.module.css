@@ -1,0 +1,66 @@
+.pagination {
+    display: flex;
+}
+
+.buttonsList {
+    padding: 16px 0;
+    margin-left: auto;
+
+    & > .button:first-child {
+        border-radius: 100vmax 0 0 100vmax;
+    }
+
+    & > .button:last-child {
+        border-radius: 0 100vmax 100vmax 0;
+    }
+}
+
+.buttonsList,
+.numberedButtons {
+    list-style: none;
+    display: flex;
+}
+
+.numberedButtons {
+    padding: 0;
+}
+
+.button {
+    display: block;
+    height: 44px;
+    width: 44px;
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+    user-select: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.disabled {
+        background-color: var(--color-gray-700);
+        color: var(--color-gray-1000);
+        border-color: var(--color-gray-1000);
+    }
+
+    & a {
+        color: inherit;
+    }
+}
+
+.button.active {
+    background-color: var(--color-gray-200) !important;
+    color: var(--color-gray-900) !important;
+}
+
+.button.disabled {
+    background-color: var(--color-gray-700);
+    color: var(--color-gray-1000);
+    border-color: var(--color-gray-1000);
+
+    &,
+    & a {
+        cursor: not-allowed;
+    }
+}
