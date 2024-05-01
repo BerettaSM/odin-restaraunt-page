@@ -14,4 +14,8 @@ export abstract class Component implements Renderable {
         this.children.forEach((child) => child.renderOn(self));
         target.appendChild(self);
     }
+
+    cleanUp() {
+        this.children.forEach((c) => c.cleanUp());
+    }
 }
