@@ -14,6 +14,12 @@ interface PaginationConfig {
     eventTarget: Window | HTMLElement;
 }
 
+interface PageChangeEventPayload {
+    page: number;
+}
+
+export class PageChangeEvent extends CustomEvent<PageChangeEventPayload> {}
+
 export class Pagination extends Component {
     private prevButton: HTMLLIElement;
     private nextButton: HTMLLIElement;
